@@ -31,7 +31,7 @@
         <a href="tel:+918095447174" class="btn btn-outline-primary me-3 phone-btn">
           <i class="fas fa-phone-alt me-2"></i>
           <span class="d-none d-sm-inline">+91 80954 47174</span>
-          <span class=" d-inline"> Call Us</span>
+          <span class="bi bi-telephone d-inline"> Call Us</span>
         </a>
         <button class="navbar-toggler" type="button" id="navbutton" on:click={toggleNav}>
           <span class="navbar-toggler-icon"></span>
