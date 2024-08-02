@@ -25,13 +25,13 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="/favicon.png" alt="Jazz Car logo" height="60">
+        <img src="/favicon.png" alt="Jazz Car logo" class="brand-logo">
       </a>
       <div class="d-flex align-items-center order-lg-last">
         <a href="tel:+918095447174" class="btn btn-outline-primary me-3 phone-btn">
           <i class="fas fa-phone-alt me-2"></i>
           <span class="d-none d-sm-inline">+91 80954 47174</span>
-          <span class="d-inline d-sm-none center">Call</span>
+          <span class="bi bi-telephone d-inline d-sm-none center"> Call</span>
         </a>
         <button class="navbar-toggler" type="button" id="navbutton" on:click={toggleNav}>
           <span class="navbar-toggler-icon"></span>
@@ -55,33 +55,43 @@
       </div>
     </div>
   </nav>
-  <br>
 </header>
 
 <style>
-div {
-  align-self: center;
-  padding-bottom: 0px;
-}
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px; /* Adjust this value to your desired header height */
+  }
 
-.phone-btn {
-  font-size: 0.9rem;
-  padding: 0.375rem 0.75rem;
-}
-
-@media (max-width: 991.98px) {
   .navbar-brand {
-    max-width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
-  .navbar-brand img {
-    max-height: 40px;
-    width: auto;
-  }
-}
 
-@media (max-width: 575.98px) {
-  .phone-btn {
-    padding: 0.375rem 0.5rem;
+  .brand-logo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
-}
+
+  .phone-btn {
+    font-size: 0.9rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  @media (max-width: 991.98px) {
+    .navbar {
+      height: 60px; /* Adjust for smaller screens */
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .phone-btn {
+      padding: 0.375rem 0.5rem;
+    }
+  }
 </style>
