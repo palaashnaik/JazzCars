@@ -145,7 +145,7 @@
     border: 2px solid var(--white);
   }
   
-  ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
+  ::-webkit-scrollbar-thumb:hover { background: hsla(219, 55%, 49%, 0.5); }
   
   
   

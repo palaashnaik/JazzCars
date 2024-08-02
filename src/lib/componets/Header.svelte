@@ -75,7 +75,7 @@
   }
 
   .brand-logo {
-    height: 8vh; /* 90% of navbar height to allow for some padding */
+    height: 6vh; /* 90% of navbar height to allow for some padding */
     width: auto;
   }
 

@@ -160,7 +160,7 @@
                           <br>
                           <div class="d-flex justify-content-between mt-auto">
                             <button type="button" id="buttons" class="btn btn-sm btn-primary" on:click={() => toggleFlip(car.id)}>Back</button>
-                            <button type="submit" class="btn btn-sm btn-secondary">Submit</button>
+                            <button type="submit" id="buttons" class="btn btn-sm btn-secondary">Submit</button>
                           </div>
                         </form>
                       </div>
