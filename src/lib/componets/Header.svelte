@@ -49,7 +49,7 @@
             <a class="nav-link" href="#GetStarted">Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog      </a>
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
         </ul>
       </div>
@@ -75,8 +75,9 @@
   }
 
   .brand-logo {
-    height: 6vh; /* 90% of navbar height to allow for some padding */
+    height: 7vh; /* 90% of navbar height to allow for some padding */
     width: auto;
+    object-fit: contain;
   }
 
   .phone-btn {
@@ -87,6 +88,24 @@
   @media (max-width: 991.98px) {
     .navbar {
       height: 7vh; /* Slightly smaller on mobile */
+    }
+
+    .navbar-collapse.show {
+      background-color: #f8f9fa; /* Light background for dropdown */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav {
+      padding-top: 0.5rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0;
     }
   }
 
