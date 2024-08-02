@@ -159,7 +159,7 @@
                           <br>
                           <br>
                           <div class="d-flex justify-content-between mt-auto">
-                            <button type="button" id="buttons" class="btn btn-sm btn-secondary" on:click={() => toggleFlip(car.id)}>Back</button>
+                            <button type="button" id="buttons" class="btn btn-sm btn-outline-primary" on:click={() => toggleFlip(car.id)}>Back</button>
                             <button type="submit" id="buttons" class="btn btn-sm btn-primary">Submit</button>
                           </div>
                         </form>
@@ -267,6 +267,7 @@
     border-collapse: collapse;
   }
 
+
   @media (max-width: 767px) {
     .main-container {
       padding-top: 4rem; /* Increased padding for mobile view */
@@ -279,6 +280,56 @@
     }
     .search-btn {
       margin-top: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .main-container {
+      padding-top: 4rem;
+    }
+    .search-form {
+      flex-direction: column;
+    }
+    .search-input, .search-btn {
+      width: 100%;
+    }
+    .search-btn {
+      margin-top: 10px;
+    }
+
+    /* New styles for 3D effect */
+    .search-container {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+      transform: translateY(0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .search-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+    .search-input, .search-btn {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .search-input:focus, .search-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .card-container {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .card-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    .card {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card-flip {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-face {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
   }
 </style>
