@@ -49,7 +49,7 @@
             <a class="nav-link" href="#GetStarted">Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog</a>
+            <a class="nav-link" href="#blog">Blog      </a>
           </li>
         </ul>
       </div>
@@ -59,23 +59,24 @@
 
 <style>
   .navbar {
+    height: 8vh; /* 8% of viewport height */
+    max-height: 80px; /* Maximum height for very large screens */
+    min-height: 50px; /* Minimum height for very small screens */
     padding-top: 0;
     padding-bottom: 0;
-    height: 80px; /* Adjust this value to your desired header height */
   }
 
   .navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .brand-logo {
-    height: 100%;
+    height: 8vh; /* 90% of navbar height to allow for some padding */
     width: auto;
-    object-fit: contain;
   }
 
   .phone-btn {
@@ -85,7 +86,7 @@
 
   @media (max-width: 991.98px) {
     .navbar {
-      height: 60px; /* Adjust for smaller screens */
+      height: 7vh; /* Slightly smaller on mobile */
     }
   }
 
