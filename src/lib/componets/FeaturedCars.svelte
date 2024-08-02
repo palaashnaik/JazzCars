@@ -70,7 +70,7 @@
                     </div>
                     <div class="d-flex justify-content-between align-items-center mt-auto">
                       <strong class="fs-5">{car.price}<small>/Day</small></strong>
-                      <button class="btn btn-sm btn-outline-primary" on:click={() => toggleFlip(car.id)}>
+                      <button class="btn btn-sm btn-primary" on:click={() => toggleFlip(car.id)}>
                         Rent now
                       </button>
                     </div>
@@ -102,7 +102,7 @@
                       <br>
                       <br>
                       <div class="d-flex justify-content-between mt-auto">
-                        <button type="button" id="buttons" class="btn btn-sm btn-primary" on:click={() => toggleFlip(car.id)}>Back</button>
+                        <button type="button" id="buttons" class="btn btn-sm btn-outline-primary" on:click={() => toggleFlip(car.id)}>Back</button>
                         <button type="submit" id="buttons" class="btn btn-sm btn-primary">Submit</button>
                       </div>
                     </form>
