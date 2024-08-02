@@ -71,7 +71,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6">
         <h1 class="display-4 fw-bold mb-4">The easy way to takeover a lease</h1>
-        <p class="lead mb-4">Lease your favorite car today!</p>
+        <p class="lead mb-4">Lease your favorite car or bike today!</p>
         
         <div class="search-container">
           <form on:submit|preventDefault={handleSearch} class="search-form">

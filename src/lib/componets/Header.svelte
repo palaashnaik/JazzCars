@@ -25,11 +25,18 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="/">
-    <img src="/favicon.png" alt="Jazz Car logo" height="60">
+        <img src="/favicon.png" alt="Jazz Car logo" height="60">
       </a>
-      <button class="navbar-toggler" type="button" id ="navbutton"on:click={toggleNav}>
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center order-lg-last">
+        <a href="tel:+918095447174" class="btn btn-outline-primary me-3 phone-btn">
+          <i class="fas fa-phone-alt me-2"></i>
+          <span class="d-none d-sm-inline">+91 80954 47174</span>
+          <span class="d-inline d-sm-none">Call</span>
+        </a>
+        <button class="navbar-toggler" type="button" id="navbutton" on:click={toggleNav}>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse {isActive ? 'show' : ''}" id="navbarNav">
         <ul class="navbar-nav ms-auto" id='navid'>
           <li class="nav-item">
@@ -45,13 +52,6 @@
             <a class="nav-link" href="#blog">Blog</a>
           </li>
         </ul>
-        <div class="d-flex align-items-center ms-lg-4">
-          <a href="tel:88002345678" class="text-dark me-3 d-none d-lg-block">
-            <small>+91 80954 47174</small><br>
-            <small class="text-muted"> 8:00 am - 8:00 pm</small>
-          </a>
-          <!-- <a href="#featured-car" class="btn btn-primary">Explore cars</a> -->
-        </div>
       </div>
     </div>
   </nav>
@@ -59,8 +59,29 @@
 </header>
 
 <style>
-div { align-self: center;
-    padding-bottom: 0px;
+div {
+  align-self: center;
+  padding-bottom: 0px;
 }
 
-</style> 
+.phone-btn {
+  font-size: 0.9rem;
+  padding: 0.375rem 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    max-width: 50%;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .phone-btn {
+    padding: 0.375rem 0.5rem;
+  }
+}
+</style>
