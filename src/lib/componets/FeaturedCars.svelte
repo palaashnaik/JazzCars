@@ -37,7 +37,7 @@
      * @param {string} dropDate
      */
   function whatsapp(name, pickupLocation, dropLocation, pickupDate, dropDate) {
-    const phoneNumber = "8095447174"; // Replace with your actual WhatsApp number
+    const phoneNumber = "9226455114"; // Replace with your actual WhatsApp number
     const message = `I'm interested in renting the ${name}.\n\nPick-up Location: ${pickupLocation}\nDrop-off Location: ${dropLocation}\nPick-up Date: ${pickupDate}\nDrop-off Date: ${dropDate}`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
