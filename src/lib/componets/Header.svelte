@@ -22,7 +22,7 @@
         <img src="/favicon.png" alt="Jazz Car logo" class="brand-logo">
       </a>
       <div class="d-flex align-items-center order-lg-last">
-        <a href="tel:+918095447174" class="btn btn-outline-primary me-3 phone-btn">
+        <a href="tel:+919226455114" class="btn btn-outline-primary me-3 phone-btn">
           <i class="fas fa-phone-alt me-2"></i>
           <!-- <span class="d-none d-sm-inline">+91 80954 47174</span> -->
           <span class="bi bi-telephone d-inline"> Call Us</span>
