@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    
-  apiKey: "AIzaSyD5zM1z_ybLwKSvokm9MuvTi0lMNXlYeeo",
-  authDomain: "jazzcarrentals-28c6b.firebaseapp.com",
-  projectId: "jazzcarrentals-28c6b",
-  storageBucket: "jazzcarrentals-28c6b.appspot.com",
-  messagingSenderId: "803297794651",
-  appId: "1:803297794651:web:84a59d8507f8847795fd7e"
+  apiKey: "AIzaSyAZ8ZVIrDm1owkFZE-2hhusI8HUXakEk10",
+  authDomain: "carrental-6de1e.firebaseapp.com",
+  projectId: "carrental-6de1e",
+  storageBucket: "carrental-6de1e.appspot.com",
+  messagingSenderId: "400935278537",
+  appId: "1:400935278537:web:de7b47d196a16db8783a18",
+  measurementId: "G-N8RM4EPLFY"
 };
 
 const app = initializeApp(firebaseConfig);
